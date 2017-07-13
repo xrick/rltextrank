@@ -153,6 +153,7 @@ class Graph(IGraph):
         self.node_attr = {}          # Pairing: Node -> Attributes
         self.node_neighbors = {}     # Pairing: Node -> Neighbors
 
+
     def has_edge(self, edge):
         u,v = edge
         return (u,v) in self.edge_properties and (v,u) in self.edge_properties
